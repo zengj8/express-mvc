@@ -1,0 +1,13 @@
+用户列表,总用户数<%=users.count%>,当前显示数<%= users.rows.length%>
+<div>
+    <% users.rows.forEach((user) => {%>
+    <div>
+        姓名：<%= user.name %>
+    </div>
+    所选课程:
+    <% user.Courses.forEach((course) => {%>
+        <%= course.name %>
+    <%})%>
+    <hr/>
+    <% }) %>
+</div>
