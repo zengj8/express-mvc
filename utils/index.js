@@ -128,7 +128,7 @@ function ipToInt(ip) {
     ipl <<= 8;
     ipl += parseInt(octet);
   });
-  return (ipl >>> 8);
+  return (ipl >>> 0);
 }
 
 function removeHTML(content) {
