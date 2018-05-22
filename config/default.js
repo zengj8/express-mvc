@@ -24,7 +24,7 @@ module.exports = {
   },
 
   log         : {
-    dir           : `/raid/${pkg.name}/log/`,
+    dir           : `/var/log/${pkg.name}/`,
     nolog         : /\.(js|css|png|jpg|jpeg|ico|svg|gif)/,
     format        : ":remote-addr :method :url :status :response-time ms :user-agent :content-length",
     replaceConsole: true,
